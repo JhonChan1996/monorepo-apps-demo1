@@ -1,9 +1,17 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import cButton from "@packages/components/cButton";
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="warp">
+    <cButton></cButton>
+  </div>
 </template>
+<style scoped>
+.warp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
